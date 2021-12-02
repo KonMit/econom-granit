@@ -22,6 +22,7 @@ const PATHS = {
 let config = {
   plugins: [
     new CleanWebpackPlugin(),
+    htmlWebpackPlugin('catalog'),
     htmlWebpackPlugin('index'),
     new MiniCssExtractPlugin({
       filename: './css/style.css'
@@ -49,7 +50,7 @@ let config = {
         use: ['html-loader',
           { loader: 'pug-html-loader',
             options: {
-              pretty: p
+              pretty: true
             }
           }
         ]
@@ -64,7 +65,7 @@ let config = {
       },
       // ===FONTS===
       {
-         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
          type: 'asset/resource',
          generator: {
            filename: `${PATHS.assets}/fonts/[name][ext]`

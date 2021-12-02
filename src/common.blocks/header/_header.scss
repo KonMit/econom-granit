@@ -1,0 +1,43 @@
+.header {
+  padding: 30px 0 0 0;
+  &__container {
+  }
+  &__top {
+    margin: 0 0 30px 0 ;
+  }
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo>span {
+    color: $base-c;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__contact {
+    color: $base-c;
+    font-weight: 500;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__button {
+    display: flex;
+    gap: 10px;
+    padding: 10px 35px;
+  }
+  &__button span {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}

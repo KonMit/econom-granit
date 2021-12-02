@@ -1,0 +1,18 @@
+.button {
+  background: #77AFE7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.button span {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #4F769C;
+}

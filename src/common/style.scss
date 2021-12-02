@@ -2,3 +2,7 @@
 @import 'fonts/_fonts';   // ШРИФТЫ
 @import 'scss/_variable'; // ПЕРЕМЕННЫЕ
 @import 'scss/_general';  // ОБЩИЕ СТИЛИ
+
+
+// HEADER
+@import '../common.blocks/_blocks.scss';
