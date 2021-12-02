@@ -1,0 +1,11 @@
+* {
+  user-select: none;
+  font-family: $base-ff, sans-serif;
+  font-size: $base-fsz;
+  font-weight: $base-fw;
+  color: $base-c;
+}
+.container {
+  max-width:  $base-w-container;
+  margin: 0 auto;
+}
