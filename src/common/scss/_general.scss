@@ -5,7 +5,13 @@
   font-weight: $base-fw;
   color: #ffffff;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .container {
   max-width:  $base-w-container;
   margin: 0 auto;
 }
+

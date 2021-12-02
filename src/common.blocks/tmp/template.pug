@@ -2,6 +2,7 @@ doctype html
 html(lang="ru")
   head
     include ../header/header
+    include ../footer/footer
     include ../header-menu/header-menu
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -9,10 +10,12 @@ html(lang="ru")
     block title
       title Эконом Гранит
   body 
-    block header
-      header.header 
-        .header__container.container 
-          +header__top 
-          +header-menu
-    block content 
-    block footer
+    .wrapper
+      block header
+        header.header 
+          .header__container
+            +header__top 
+            +header-menu
+      block content 
+      block footer
+        +footer

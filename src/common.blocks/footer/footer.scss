@@ -1,0 +1,50 @@
+.footer {
+  flex: 0 0 auto; 
+  background: #6C9AC8;
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px 25px 25px;
+  }
+  &__logo span {
+    font-weight: bold;
+    font-size: 24px;
+    
+  }
+  &__rights {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+  &__info-box {
+    display: flex;
+    gap: 20px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__item {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
