@@ -1,10 +1,15 @@
-@import 'button/button';
+//  elements
+@import 'button/button'; 
+@import 'breadcrumbs/breadcrumbs';
+@import 'main/promo/promo';
 
 // HEADER
 @import 'header/header';
 @import 'header-menu/header-menu';
 
+// MAIN
+@import 'main/main';
+
 // FOOTER
 @import 'footer/footer';
-
 
