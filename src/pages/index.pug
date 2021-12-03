@@ -1,1 +1,51 @@
 extends ../common.blocks/tmp/template.pug
+
+include ../common.blocks/main/promo/promo
+include ../common.blocks/main/preview-catalog/preview-catalog
+
+block content 
+  main.main 
+    .main__container.container
+      //-  первый блок - хлебные крошки
+
+      +promo()
+      //- promo
+
+      +preview-catalog()
+      //- превью каталога
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //- <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+  //-   <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  //-     <a itemprop="item" href="/">
+  //-       img.breadcrumbs__icon(src="../common.blocks/breadcrumbs/breadcrumbs.svg", alt="breadcrumbs", itemprop="icon")
+  //-     </a>
+  //-     <meta itemprop="position" content="1" />
+  //-   </li>
+  //- </ol>
+

@@ -1,0 +1,21 @@
+include preview-catalog__item/preview-catalog__item
+
+mixin preview-catalog()
+  .main__preview-catalog.preview-catalog
+    .preview-catalog__box 
+      .preview-catalog__category 
+        .preview-catalog__list 
+          h3.preview-catalog__title.title_h3 Памятники из гранита
+          .preview-catalog__items
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/1.jpg')
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/2.jpg')
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/3.jpg')
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/4.jpg')
+        .preview-catalog__list 
+          h3.preview-catalog__title.title_h3 Гравировка
+          .preview-catalog__items
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/2.1.jpg')
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/2.2.jpg')
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/2.3.jpeg')
+            +preview-catalog__item('../common.blocks/main/preview-catalog/preview-catalog__item/2.4.jpg')
+      a.preview-catalog__button.button(href="catalog.html")  смотреть весь каталог

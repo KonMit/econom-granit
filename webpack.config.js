@@ -23,6 +23,7 @@ let config = {
   plugins: [
     new CleanWebpackPlugin(),
     htmlWebpackPlugin('catalog'),
+    htmlWebpackPlugin('our-work'),
     htmlWebpackPlugin('index'),
     new MiniCssExtractPlugin({
       filename: './css/style.css'
