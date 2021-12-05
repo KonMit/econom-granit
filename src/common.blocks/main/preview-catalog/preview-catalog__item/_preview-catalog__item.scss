@@ -5,15 +5,15 @@
   transition: all .2s;
 }
 .preview-catalog__image {
-  width: 250px;
-  height: 300px;
+  width: 230px;
+  height: 250px;
 }
 .preview-catalog__link {
   display: block;
   position: relative;
   z-index: 10;
-  width: 250px;
-  height: 300px;
+  width: 230px;
+  height: 250px;
   background: #c3c3c3;
 }
 
@@ -44,7 +44,6 @@
 .preview-catalog__button {
   width: 100%;
   border-radius: 0;
-  height: 50px;
 }
 .preview-catalog__link:hover.preview-catalog__link::after,
 .preview-catalog__link:hover.preview-catalog__link::before {

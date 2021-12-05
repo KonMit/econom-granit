@@ -22,6 +22,7 @@ const PATHS = {
 let config = {
   plugins: [
     new CleanWebpackPlugin(),
+    htmlWebpackPlugin('contacts'),
     htmlWebpackPlugin('catalog'),
     htmlWebpackPlugin('our-work'),
     htmlWebpackPlugin('index'),
