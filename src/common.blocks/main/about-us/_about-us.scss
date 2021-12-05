@@ -1,0 +1,20 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;  
+  &__title {
+    font-size: 36px;
+    color: $base-c;
+    font-weight: 600;
+  }
+  &__description {
+    text-align: center;
+    color: $base-c;
+    max-width: 1000px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;  
+  }
+}

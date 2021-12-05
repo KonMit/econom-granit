@@ -2,6 +2,7 @@ extends ../common.blocks/tmp/template.pug
 
 include ../common.blocks/main/promo/promo
 include ../common.blocks/main/preview-catalog/preview-catalog
+include ../common.blocks/main/about-us/about-us
 
 block content 
   main.main 
@@ -13,6 +14,9 @@ block content
 
       +preview-catalog()
       //- превью каталога
+      
+      +about-us()
+      //- О нас
 
 
 

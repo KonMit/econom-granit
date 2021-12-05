@@ -1,10 +1,16 @@
 .main {
   flex: 1 0 auto;
   padding: 0 25px 0 25px;
+  &__container {
+    width: 100%;
+  } 
   &__promo {
     margin: 25px 0 0 0;
   }
   &__preview-catalog {
+    margin: 0 0 100px 0 ;
+  }
+  &__about-us {
     margin: 0 0 100px 0 ;
   }
 }
