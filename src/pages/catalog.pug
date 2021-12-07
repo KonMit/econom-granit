@@ -1,12 +1,29 @@
 //- Подключаем шаблон для всех страниц
 extends ../common.blocks/tmp/template.pug
 
+include ../common.blocks/main/catalog/catalog
+include ../common.blocks/main/catalog/catalog__category/catalog__category
+
 block title 
   title Каталог
 block content 
   main.main 
     .main__container.container
-        
+      //-  первый блок - хлебные крошки
+
+      .main__catalog.catalog 
+        .catalog__box   
+          - let title = {'1': { name:'Памятники из гранита',  nameSub: ['Стандартные', 'Вертикальные','Горизонтальные','Фигурные']},
+          -    '2': {name: 'Гравировка',  nameSub: ['Пейзажи', 'Обратная сторона','Портреты','Свечи', 'Цветы']}, 
+          -    '3': {name: 'Плиты с портретом',  nameSub: ['Черно-белые портреты', 'Цветные портреты']},
+          -    '4': {name: 'Благоустройство',  nameSub: ['Бордюрный камень', 'Гранитная и тротуарная плитка','Мраморная крошка']},
+          -    '5': {name: 'Аксессуары',  nameSub: ['Вазы', 'Лампады','Шары',]}
+          -  };
+          +catalog__category(title)
+          
+
+      //- основной блок каталога
+      
 
 
 

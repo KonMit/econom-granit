@@ -1,0 +1,15 @@
+include ../catalog__item/catalog__item
+
+
+mixin catalog__category(title)
+  - for(key in title)
+    .catalog__category
+      h3.catalog__title.title.title_h3= title[key].name
+      .catalog__items
+        - for(name in title[key].nameSub) 
+            +catalog__item(title[key].nameSub[name])
+
+
+
+//- title - Массив заголовков категорий
+//- key.q - количество(quantity) подкатегорий товаров(item)

@@ -5,7 +5,13 @@
 @import 'main/preview-catalog/preview-catalog__item/preview-catalog__item'; // На главной
 @import 'main/about-us/about-us'; // На главной
 
-@import 'main/contacts-box/contacts-box';
+@import 'main/catalog/catalog'; // Каталог
+@import 'main/catalog/catalog__category/catalog__category'; // Каталог
+@import 'main/catalog/catalog__item/catalog__item'; // Каталог
+
+// Наши работы
+
+@import 'main/contacts-box/contacts-box'; // Контакты
 
 // HEADER
 @import 'header/header';

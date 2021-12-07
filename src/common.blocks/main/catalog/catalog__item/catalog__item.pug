@@ -1,0 +1,9 @@
+mixin catalog__item(name)
+  .catalog__item
+    a.catalog__link(href="#") 
+      img.catalog__image(src='../common.blocks/main/preview-catalog/preview-catalog__item/1.jpg', alt="catalog-image")
+    .catalog__subtitle-box  
+      a.catalog__name(href="#")
+        h5.catalog__subtitle.title.title_h5= name
+      button.catalog__question.question
+        img.question__b(src="../common.blocks/main/catalog/catalog__item/question/question.svg", alt="")

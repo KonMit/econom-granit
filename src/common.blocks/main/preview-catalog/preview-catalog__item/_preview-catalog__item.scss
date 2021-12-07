@@ -24,7 +24,7 @@
   left: 0;
   position: absolute;
   width: 100%;
-  height: 350px;
+  height: 300px;
   background: rgba(0, 0, 0, 0.4);
   transform: scale(0);
 }
@@ -39,7 +39,6 @@
   background: url('../common.blocks/main/preview-catalog/preview-catalog__item/_preview-catalog__item-link.svg') center no-repeat;
   transform: scale(0);
   transition: all .2s;
-
 }
 .preview-catalog__button {
   width: 100%;
