@@ -1,1 +1,15 @@
 extends ../common.blocks/tmp/template.pug
+
+include ../common.blocks/main/contacts-box/contacts-box
+
+block title 
+  title Контакты
+
+block content 
+  main.main   
+    .main__container.container
+      //-  первый блок - хлебные крошки
+
+    
+      +contacts-box()
+      //- основной блок с контактами

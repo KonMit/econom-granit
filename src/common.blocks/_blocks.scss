@@ -1,9 +1,11 @@
 //  elements
 @import 'button/button'; 
-@import 'main/promo/promo';
-@import 'main/preview-catalog/preview-catalog';
-@import 'main/preview-catalog/preview-catalog__item/preview-catalog__item';
-@import 'main/about-us/about-us';
+@import 'main/promo/promo'; // На главной
+@import 'main/preview-catalog/preview-catalog'; // На главной
+@import 'main/preview-catalog/preview-catalog__item/preview-catalog__item'; // На главной
+@import 'main/about-us/about-us'; // На главной
+
+@import 'main/contacts-box/contacts-box';
 
 // HEADER
 @import 'header/header';

@@ -1,0 +1,25 @@
+mixin contacts-box()
+  .main__contacts-box.contacts-box
+    .contacts-box__left
+      h3.contacts-box__title.title.title_h3 Контакты
+      ul.contacts-box__list 
+        li.contacts-box__item
+          p 
+            b г. Пенза, ул. Коллективная
+        li.contacts-box__item
+          a(href="tel:") 
+            b Тел:
+            |+7 (903) 347-55-86 
+        li.contacts-box__item
+          a(href="mailto:") 
+            b E-mail: 
+            |info.granit@mail.ru  
+        li.contacts-box__item
+          p 
+            |Часы работы: 
+            b с 9:00 до 18:00
+        li.contacts-box__item
+          p 
+            b Без выходных
+    .contacts-box__map
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8566fa2bd16b552da6ccf25b0247e75fbe123079818eee3b47e5e255a187272a&amp;source=constructor" width="650" height="380" frameborder="0"></iframe>
