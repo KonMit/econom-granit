@@ -15,3 +15,17 @@
   margin: 0 auto;
 }
 
+.title {
+  color: $base-c;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  &_h3 {
+    font-size: 24px;
+  }
+  &_h5 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
