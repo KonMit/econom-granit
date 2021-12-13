@@ -1,3 +1,7 @@
 node_modules/
-dist/
+src/
 info.txt
+package-lock.json
+package.json
+README.md
+webpack.config.js
