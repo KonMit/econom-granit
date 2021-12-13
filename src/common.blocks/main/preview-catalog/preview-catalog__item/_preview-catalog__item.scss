@@ -42,7 +42,7 @@
 }
 .preview-catalog__button {
   width: 100%;
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .preview-catalog__link:hover.preview-catalog__link::after,
 .preview-catalog__link:hover.preview-catalog__link::before {

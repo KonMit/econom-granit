@@ -1,0 +1,13 @@
+mixin dropdown-menu(title) 
+  .dropdown-menu.header-menu__link
+    a.dropdown-menu__link(href="catalog.html") 
+      span Каталог
+      img(src="../common.blocks/header-menu/header-menu-arrowdown.svg", alt="arrowdown")
+    .dropdown-menu__content 
+      -for(category in title)
+        ul.dropdown-menu__category 
+          h4.dropdown-menu__title.title.title_h4=title[category].name
+          -for(product in title[category].nameSub)
+            li.dropdown-menu__product
+              span.dropdown-menu__arrow
+              a.dropdown-menu__text(href="#")=title[category].nameSub[product]

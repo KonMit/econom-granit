@@ -1,3 +1,5 @@
+include dropdown-menu/dropdown-menu
+
 mixin header-menu  
   .header__menu.header-menu
     ul.header-menu__list.container
@@ -5,9 +7,13 @@ mixin header-menu
         a.header-menu__link(href="/")
           span Главная
       li.header-menu__item 
-        a.header-menu__link(href="catalog.html") 
-          span Каталог
-          img(src="../common.blocks/header-menu/header-menu-arrowdown.svg", alt="arrowdown")
+        - let title = {'1': { name:'Памятники из гранита',  nameSub: ['Стандартные', 'Вертикальные','Горизонтальные','Фигурные']},
+        -    '2': {name: 'Гравировка',  nameSub: ['Пейзажи', 'Обратная сторона','Портреты','Свечи', 'Цветы']}, 
+        -    '3': {name: 'Плиты с портретом',  nameSub: ['Черно-белые портреты', 'Цветные портреты']},
+        -    '4': {name: 'Благоустройство',  nameSub: ['Бордюрный камень', 'Гранитная и тротуарная плитка','Мраморная крошка']},
+        -    '5': {name: 'Аксессуары',  nameSub: ['Вазы', 'Лампады','Шары',]}
+        -  };
+        +dropdown-menu(title)
       li.header-menu__item 
         a.header-menu__link(href="our-work.html") 
           span Наши работы

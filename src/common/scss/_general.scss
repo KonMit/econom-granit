@@ -5,6 +5,9 @@
   font-weight: $base-fw;
   color: #ffffff;
 }
+img {
+  color: $base-c;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -22,6 +25,9 @@
   text-transform: uppercase;
   &_h3 {
     font-size: 24px;
+  }
+  &_h4 {
+    font-size: 18px;
   }
   &_h5 {
     font-size: 14px;
