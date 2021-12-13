@@ -1,0 +1,13 @@
+mixin our-work()
+  .main__our-work.our-work 
+    .our-work__title-box
+      h3.our-work__title.title.title_h3 Наши работы
+      +question(text, "question__big")
+    .our-work__items
+      .our-work__images-box
+        img.our-work__image(src="../common/img/our-work/our-work-1.jpeg", alt="")
+      .modal
+        .modal__content
+          img.modal__image(src="../common/img/our-work/our-work-5.jpeg" alt="image")
+          //- button.modal__button.title.title_h4(type="button") закрыть
+        

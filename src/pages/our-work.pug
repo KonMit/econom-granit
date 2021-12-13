@@ -1,5 +1,13 @@
 extends ../common.blocks/tmp/template.pug
 
+include ../common.blocks/main/our-work/our-work
+
 block title 
   title Наши работы
   
+block content 
+  //- первый блок - хлебные крошки
+  main.main   
+    .main__container.container
+      +our-work()
+        
