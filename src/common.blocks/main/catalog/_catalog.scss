@@ -5,8 +5,11 @@
     flex-direction: column;
     row-gap: 40px;
   }
-  &__title {
+  &__title-box {
     margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
   &__items {
     display: flex;
@@ -24,8 +27,8 @@
     border-radius: 5px;
     display: block;
     position: relative;
-    width: 230px;
-    height: 300px;
+    width: 200px;
+    height: 260px;
     background: #c3c3c3;
     overflow: hidden;
     box-shadow: 2px 2px 6px rgba(119, 175, 231, 0.25);
@@ -59,8 +62,8 @@
     border-radius: 5px;
   }
   &__image {
-    width: 230px;
-    height: 300px;
+    width: 200px;
+    height: 260px;
     border-radius: 5px;
   }
 
@@ -71,16 +74,10 @@
     gap: 10px;
   }
   &__subtitle {
-    max-width: 200px;
+    max-width: 150px;
   }
-  &__question {}
 }
 
-.question {
-  width: 15px;
-  height: 15px;
-  background: none;
-  &__b{}
-}
+
 
 

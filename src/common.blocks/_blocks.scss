@@ -1,5 +1,7 @@
 //  elements
-@import 'button/button'; 
+@import 'main/question/question'; // общий
+@import 'button/button'; // общий
+
 @import 'main/promo/promo'; // На главной
 @import 'main/preview-catalog/preview-catalog'; // На главной
 @import 'main/preview-catalog/preview-catalog__item/preview-catalog__item'; // На главной
@@ -8,6 +10,7 @@
 @import 'main/catalog/catalog'; // Каталог
 @import 'main/catalog/catalog__category/catalog__category'; // Каталог
 @import 'main/catalog/catalog__item/catalog__item'; // Каталог
+
 
 // Наши работы
 
