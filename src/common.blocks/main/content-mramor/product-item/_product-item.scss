@@ -1,0 +1,27 @@
+.product-item {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  // &__image-box {
+  //   border-radius: 7px;
+  //   border: 1px solid #77AFE7;
+  // }
+  &__image {
+    width: 230px;
+    height: 250px;
+    &_p {
+      padding: 15px;
+    }
+  }
+  &__button {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  &__title {
+    margin: 10px 0 0 0;
+  }
+}

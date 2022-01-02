@@ -5,10 +5,14 @@ html(lang="ru")
     include ../footer/footer
     include ../header-menu/header-menu
     include ../main/question/question
+    include ../main/pagination/pagination
+    include ../main/content-mramor/content-mramor
 
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block link 
+      
     block title
       title Эконом Гранит
   body 
@@ -19,5 +23,7 @@ html(lang="ru")
             +header-top 
             +header-menu
       block content
+        main.main   
+          .main__container.container
       block footer
         +footer

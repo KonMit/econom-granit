@@ -1,0 +1,11 @@
+extends ../common.blocks/tmp/template.pug
+
+block title 
+  title Лампады - ЭкономГранит
+
+block content
+  main.main   
+    .main__container.container
+      //- breadcrumbs
+      -let tooltip = 'Лампада — это специальный ритуальный светильник, который зажигают на могиле усопшего, обращаясь к Богу.'
+      +content-mramor('Лампады', tooltip, '../common/img/acc/lampada/lampada.jpg')

@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const BrowserSync = require('browser-sync-webpack-plugin');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const { extendDefaultPlugins } = require("svgo");
 
 let p;
 
@@ -19,9 +21,17 @@ const PATHS = {
   assets: 'assets'
 }
 
-let config = {
+let clientConfig = {
   plugins: [
+    
     new CleanWebpackPlugin(),
+    htmlWebpackPlugin('shar'),
+    htmlWebpackPlugin('lampada'),
+    htmlWebpackPlugin('vasi'),
+    htmlWebpackPlugin('kroshka'),
+    htmlWebpackPlugin('bordur'),
+    htmlWebpackPlugin('plitka'),
+    htmlWebpackPlugin('vertikalnie'),
     htmlWebpackPlugin('contacts'),
     htmlWebpackPlugin('catalog'),
     htmlWebpackPlugin('our-work'),
@@ -37,9 +47,11 @@ let config = {
       }
     }),
   ],
-  mode: 'none',
+  
+  mode:'none',
   context: PATHS.src,
   entry: './common/index.js',
+  target:'web',
   output: {
     path: PATHS.dist,
     filename: 'js/index.bundle.js'
@@ -59,10 +71,10 @@ let config = {
       },
       // ===IMAGES===
       {
-        test: /\.(png|jp(e)?g|svg)$/,
+        test: /\.(png|jp(e)?g|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: `${PATHS.assets}/img/[name][ext]`
+          filename: `${PATHS.assets}/img/[path][name][ext]`
         }
       },
       // ===FONTS===
@@ -73,6 +85,14 @@ let config = {
            filename: `${PATHS.assets}/fonts/[name][ext]`
          }
        },
+      // ===JSON===
+       {
+        test: /\.json?$/,
+        type: 'asset/resource',
+        generator: {
+          filename: `${PATHS.assets}/JSON/[name][ext]`
+        }
+      },
        // ===SCSS==
       {
         test: /\.s[ac]ss$/,
@@ -80,21 +100,67 @@ let config = {
         ]
       }
     ]
-  }
-}
+  },
+  //  optimization: {
+  //   minimizer: [
+  //     "...",
+  //     new ImageMinimizerPlugin({
+  //       minimizer: {
+  //         implementation: ImageMinimizerPlugin.imageminMinify,
+  //         options: {
+  //           // Lossless optimization with custom option
+  //           // Feel free to experiment with options for better result for you
+  //           plugins: [
+  //             ["gifsicle", { interlaced: true }],
+  //             ["jpegtran", { progressive: true }],
+  //             ["optipng", { optimizationLevel: 5 }],
+  //             // Svgo configuration here https://github.com/svg/svgo#configuration
+  //             [
+  //               "svgo",
+  //               {
+  //                 plugins: extendDefaultPlugins([
+  //                   {
+  //                     name: "removeViewBox",
+  //                     active: false,
+  //                   },
+  //                   {
+  //                     name: "addAttributesToSVGElement",
+  //                     params: {
+  //                       attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
+  //                     },
+  //                   },
+  //                 ]),
+  //               },
+  //             ],
+  //           ],
+  //         },
+  //       },
+  //     }),
+  //   ],
+  // },
+};
 
+// let serverConfing = {
+//   target:'node',
+//   output: {
+//     path: PATHS.dist,
+//     filename: 'js/index.bundle.node.js'
+//   },
+// }
 
+// module.exports = [serverConfing, clientConfig];
 
 module.exports = (env, argv) => {
+ 
   if (argv.mode === 'development') {
-    config.mode = 'development';
+    clientConfig.mode = 'development';
     p = true;
   }
 
   if (argv.mode === 'production') {
-    config.mode = 'production';
+    clientConfig.mode = 'production';
     p = false;
   }
 
-  return config;
-}
+  return clientConfig;
+};

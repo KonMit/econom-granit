@@ -1,0 +1,35 @@
+.sample {
+  &__wrapper {
+    padding: 80px 0 0 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  &__item {}
+  &__title {}
+  &__photos {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 15px 0 0 0;
+  }
+  &__photo-box {
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__image {
+    width: 400px;
+    height: 400px;
+  }
+  &__image:hover {
+    opacity: .7;
+  }
+}

@@ -1,0 +1,11 @@
+extends ../common.blocks/tmp/template.pug
+
+block title 
+  title Вазы - ЭкономГранит
+
+block content
+  main.main   
+    .main__container.container
+      //- breadcrumbs
+      -let tooltip = 'Вазы гранитные на могилу гармонично дополняют внешний вид захоронения. Они служат функциональным украшением как не большого захоронения, так и монументального мемориального комплекса.'
+      +content-mramor('Вазы', tooltip, "../common/img/acc/vasa/vasa.jpg")

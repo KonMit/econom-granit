@@ -1,0 +1,16 @@
+.content-mramor {
+  &__title-box {
+    margin: 0 0 20px 0;
+  }
+  &__body {
+    
+  }
+  &__product-items {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+}
+
+@import './product-item/product-item';
+@import './sample/sample';

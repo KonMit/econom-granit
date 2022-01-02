@@ -18,12 +18,14 @@
 
 // MAIN
 @import 'main/main';
+@import 'main/content-mramor/content-mramor';
 
 // FOOTER
 @import 'footer/footer';
 
 //  elements
-@import 'main/question/question'; // общий
 @import 'button/button'; // общий
+@import 'main/question/question'; // общий
+@import 'main/pagination/pagination'; // общий
 @import 'header-menu/dropdown-menu/dropdown-menu'; // общий
 

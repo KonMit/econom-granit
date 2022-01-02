@@ -12,40 +12,142 @@ block content
       //-  первый блок - хлебные крошки
 
       .main__catalog.catalog 
-        .catalog__box   
+        .catalog__box 
+          .catalog__category
+            .catalog__title-box
+              h3.catalog__title.title.title_h3 Памятники из гранита
+              - var tooltipCategory = "Памятник из гранита — это символ скорби и вечной памяти о близком человеке.";
+              +question(tooltipCategory, "question__big")
+            .catalog__items
+              -var href = "vasi.html";
+              -var tooltip = "St";
+              -var src = "../common.blocks/main/preview-catalog/preview-catalog__item/1.jpg";
+              +catalog__item('Cтандартные', href, tooltip, src)
+              //===1===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/pam/vert/1.jpg";
+              +catalog__item('Вертикальные', href, tooltip, src)
+              //===2===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/pam/gorisontalnie/1.jpg";
+              +catalog__item('Горизонтальные', href, tooltip, src)
+              //===3===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/pam/figurnie/01.png";
+              +catalog__item('Фигурные', href, tooltip, src)
+              //===4===
+          //===category===
+
+          .catalog__category
+            .catalog__title-box
+              h3.catalog__title.title.title_h3 Гравировка
+              - var tooltipCategory = "Гравировка";
+              +question(tooltipCategory, "question__big")
+            .catalog__items
+              -var href = "vasi.html";
+              -var tooltip = "St";
+              //- -var src = "../common/img/graw/peizaji/1.jpg";
+              +catalog__item('Пейзажи', href, tooltip, src)
+              //===1===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/obrs/1.jpg";
+              +catalog__item('Обратная сторона', href, tooltip, src)
+              //===2===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/portreti/1.jpg";
+              +catalog__item('Портреты', href, tooltip, src)
+              //===3===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/svechi/1.jpg";
+              +catalog__item('Свечи', href, tooltip, src)
+              //===4===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/zveti/3.jpg";
+              +catalog__item('Цветы', href, tooltip, src)
+              //===5===
+          //===category===
+
+          .catalog__category
+            .catalog__title-box
+              h3.catalog__title.title.title_h3 Плиты с портретом
+              - var tooltipCategory = "Плиты с портретом";
+              +question(tooltipCategory, "question__big")
+            .catalog__items
+              -var href = "vasi.html";
+              -var tooltip = "St";
+              //- -var src = "../common/img/graw/peizaji/1.jpg";
+              +catalog__item('Черно-белые портреты', href, tooltip, src)
+              //===1===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/obrs/1.jpg";
+              +catalog__item('Цветные портреты', href, tooltip, src)
+              //===2===
+          //===category===
+
+          .catalog__category
+            .catalog__title-box
+              h3.catalog__title.title.title_h3 Благоустройство
+              - var tooltipCategory = "Благоустройство";
+              +question(tooltipCategory, "question__big")
+            .catalog__items
+              -var href = "vasi.html";
+              -var tooltip = "St";
+              //- -var src = "../common/img/graw/peizaji/1.jpg";
+              +catalog__item('Бордюрный камень', href, tooltip, src)
+              //===1===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/obrs/1.jpg";
+              +catalog__item('Гранитная и тротуарная плитка', href, tooltip, src)
+              //===2===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/portreti/1.jpg";
+              +catalog__item('Мраморная крошка', href, tooltip, src)
+              //===3===
+          //===category===
+
+          .catalog__category
+            .catalog__title-box
+              h3.catalog__title.title.title_h3 Аксессуары
+              - var tooltipCategory = "Аксессуары";
+              +question(tooltipCategory, "question__big")
+            .catalog__items
+              -var href = "vasi.html";
+              -var tooltip = "St";
+              //- -var src = "../common/img/graw/peizaji/1.jpg";
+              +catalog__item('Вазы', href, tooltip, src)
+              //===1===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/obrs/1.jpg";
+              +catalog__item('Лампады', href, tooltip, src)
+              //===2===
+              -var href = "vertikalnie.html";
+              -var tooltip = "St";
+              -var src = "../common/img/graw/portreti/1.jpg";
+              +catalog__item('Шары', href, tooltip, src)
+              //===3===
+          //===category===
+              
           - let title = {'1': { name:'Памятники из гранита',  nameSub: ['Стандартные', 'Вертикальные','Горизонтальные','Фигурные']},
           -    '2': {name: 'Гравировка',  nameSub: ['Пейзажи', 'Обратная сторона','Портреты','Свечи', 'Цветы']}, 
           -    '3': {name: 'Плиты с портретом',  nameSub: ['Черно-белые портреты', 'Цветные портреты']},
           -    '4': {name: 'Благоустройство',  nameSub: ['Бордюрный камень', 'Гранитная и тротуарная плитка','Мраморная крошка']},
           -    '5': {name: 'Аксессуары',  nameSub: ['Вазы', 'Лампады','Шары',]}
           -  };
-          //- - let text = [
-          //- -   { '1':'Стандартные модели памятников отличаются от экономичных изначальной полировкой с четырех сторон, имеют обработанные кромки в виде фасок и комплектуются цветником.',
-          //- -     '2':'Вертикальные — надгробия из гранита прямоугольной простой формы',
-          //- -     '3':'Горизонтальный памятник из гранита многофункционален и, кроме того, эстетичен. Горизонтальное надгробие из гранита, преимущественно устанавливается на семейные захоронения.',
-          //- -     '4':'Уникальность фигурного надгробного памятника, заключается в его неповторимой форме. Всегда хочется, что бы памятник, установленный на могиле близкого Вам человека, выгодно отличался визуально.'
-          //- -   },
-          //- -   { '1':'Красивый пейзаж – станет органичным украшением надгробного камня',
-          //- -     '2':'',
-          //- -     '3':'',
-          //- -     '4':'',
-          //- -     '5':'Самым классическим выбором, для выражения скорби в камне, является гравировка цветов на памятник. Цветы — это символ жизни, скорби и любви',
-          //- -   },
-          //- -   { '1':'Керамогранит, на котором выгравирован черно-белый портрет',
-          //- -     '2':'Фотокерамика или керамагранит с цветными портретами на них'
-          //- -   },
-          //- -   { '1':'Одним из этапов благоустройства является мощение участка с последующей установкой дорожного бордюрного камня. Его назначение: 1. cдерживать плитку или брусчатку, не давая ей расползтись, 2. препятствовать размыванию участка осадками, 3. отделить участок на кладбище от соседних.',
-          //- -     '2':'Основными достоинствами плитки, при укладке на могилу, является ее эстетичность, простота последующего ухода за местом захоронения',
-          //- -     '3':'Среди разных способов мощения в последнее время растет популярность отсыпки участка мраморной крошкой, окрашенной в один, два или несколько цветов',
-          //- -   },
-          //- -   { '1':'Вазы гранитные на могилу гармонично дополняют внешний вид захоронения. Они служат функциональным украшением как не большого захоронения, так и монументального мемориального комплекса.',
-          //- -     '2':'Лампада — это специальный ритуальный светильник, который зажигают на могиле усопшего, обращаясь к Богу',
-          //- -     '2':'Гранитные шары — это элемент оформления мемориальных сооружений, который располагается по углам оградки'
-          //- -   }
-          //- -];
-          +catalog__category(title)
+          //- +catalog__category(title)
           //- основной блок каталога
       
+
 
 
 

@@ -4,10 +4,69 @@ mixin dropdown-menu(title)
       span Каталог
       img(src="../common.blocks/header-menu/header-menu-arrowdown.svg", alt="arrowdown")
     .dropdown-menu__content 
-      -for(category in title)
         ul.dropdown-menu__category 
-          h4.dropdown-menu__title.title.title_h4=title[category].name
-          -for(product in title[category].nameSub)
-            li.dropdown-menu__product
-              span.dropdown-menu__arrow
-              a.dropdown-menu__text(href="#")=title[category].nameSub[product]
+          h4.dropdown-menu__title.title.title_h4 Памятники из гранита
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Стандартные
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="vertikalnie.html") Вертикальные
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Горизонтальные
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Фигурные
+        //===1===
+        ul.dropdown-menu__category 
+          h4.dropdown-menu__title.title.title_h4 Гравировка
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Пейзажи
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Обратная сторона
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Портреты
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Свечи
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Цветы
+        //===2===
+        ul.dropdown-menu__category 
+          h4.dropdown-menu__title.title.title_h4 Плиты с портретом
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Черно-белые портреты
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="#") Цветные портреты
+        //===3===    
+        ul.dropdown-menu__category 
+          h4.dropdown-menu__title.title.title_h4 Благоустройство
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="bordur.html") Бордюрный камень
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="plitka.html") Гранитная и тротуарная плитка
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="kroshka.html") Мраморная крошка
+        //===4===
+        ul.dropdown-menu__category 
+          h4.dropdown-menu__title.title.title_h4 Аксессуары
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="vasi.html") Вазы
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="lampada.html") Лампады
+          li.dropdown-menu__product
+            span.dropdown-menu__arrow
+            a.dropdown-menu__text(href="shar.html") Шары
+        //===5===
