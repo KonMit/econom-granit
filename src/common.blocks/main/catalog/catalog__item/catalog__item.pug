@@ -1,10 +1,20 @@
-mixin catalog__item(titleH5, href, tooltip, src)
-  .catalog__item
-    a.catalog__link(href=href) 
+//- mixin catalog__item(titleH5, href, tooltip, src, id)
+//-   .catalog__item(id=id)
+//-     a.catalog__link(href=href) 
+//-       img.catalog__image(src=src alt="catalog-image")
+//-     .catalog__subtitle-box  
+//-       a.catalog__name(href=href)
+//-         h5.catalog__subtitle.title.title_h5= titleH5
+//-       +question(tooltip, cl)
+//-       //- .catalog__question.question
+//-       //-   img.question__b(src="../common.blocks/main/question/question.svg", alt="")
+mixin catalog__item(titleH5, href, tooltip, src, id, type)
+  .catalog__item(id=id class=type)
+    a.catalog__link(href=href)
       img.catalog__image(src=src alt="catalog-image")
     .catalog__subtitle-box  
-      a.catalog__name(href="#")
+      .catalog__name
         h5.catalog__subtitle.title.title_h5= titleH5
       +question(tooltip, cl)
       //- .catalog__question.question
-      //-   img.question__b(src="../common.blocks/main/question/question.svg", alt="")
+      //-   img.question__b(src="../common.blocks/main/question/question.svg", alt="")      

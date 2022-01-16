@@ -69,6 +69,14 @@ let clientConfig = {
           }
         ]
       },
+      // ===PHP===
+      {
+        test: /\.php$/,
+        type: 'asset/resource',
+        generator: {
+          filename: `${PATHS.dist}[ext]`
+        }
+      },
       // ===IMAGES===
       {
         test: /\.(png|jp(e)?g|svg)$/i,

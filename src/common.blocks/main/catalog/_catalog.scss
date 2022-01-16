@@ -31,6 +31,8 @@
     height: 260px;
     background: #c3c3c3;
     overflow: hidden;
+    cursor: pointer;
+
     // box-shadow: 2px 2px 6px rgba(119, 175, 231, 0.25);
   }
   &__link::after {
@@ -72,6 +74,9 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+  }
+  &__name {
+    cursor: pointer;
   }
   &__subtitle {
     max-width: 150px;

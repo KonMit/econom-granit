@@ -1,4 +1,4 @@
-mixin content-mramor(title, tooltip, src)
+mixin content-mramor(title, tooltip, src, alt)
   .main__content-mramor.content-mramor 
     .content-mramor__title-box.title-box
       h3.title.title_h3= title
@@ -11,7 +11,7 @@ mixin content-mramor(title, tooltip, src)
         .content-mramor__product-item.product-item 
           .product-item__wrapper 
             .product-item__image-box
-              img.product-item__image(src=src, alt="primer")
+              img.product-item__image(src=src, alt=alt)
               button.product-item__button.button Оставить заявку
             h5.product-item__title.title.title_h5= title
       //- -if(sample)      

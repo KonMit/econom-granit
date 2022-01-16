@@ -1,7 +1,7 @@
 //- Подключаем шаблон 
 extends ../common.blocks/tmp/template.pug
 
-include ../common.blocks/main/catalog/catalog
+//- include ../common.blocks/main/catalog/catalog
 include ../common.blocks/main/catalog/catalog__category/catalog__category
 
 block title 
@@ -19,25 +19,30 @@ block content
               - var tooltipCategory = "Памятник из гранита — это символ скорби и вечной памяти о близком человеке.";
               +question(tooltipCategory, "question__big")
             .catalog__items
-              -var href = "vasi.html";
+              -var type = '_type-A'
+              -var href = "standart.html";
               -var tooltip = "St";
               -var src = "../common.blocks/main/preview-catalog/preview-catalog__item/1.jpg";
-              +catalog__item('Cтандартные', href, tooltip, src)
+              -var id = "stand";
+              +catalog__item('Cтандартные', href, tooltip, src, id, type)
               //===1===
               -var href = "vertikalnie.html";
               -var tooltip = "St";
               -var src = "../common/img/pam/vert/1.jpg";
-              +catalog__item('Вертикальные', href, tooltip, src)
+              -var id = "vert";
+              +catalog__item('Вертикальные', href, tooltip, src, id, type)
               //===2===
-              -var href = "vertikalnie.html";
+              -var href = "gorizontal.html";
               -var tooltip = "St";
               -var src = "../common/img/pam/gorisontalnie/1.jpg";
-              +catalog__item('Горизонтальные', href, tooltip, src)
+              -var id = "goriz";
+              +catalog__item('Горизонтальные', href, tooltip, src, id, type)
               //===3===
-              -var href = "vertikalnie.html";
+              -var href = "figurnie.html";
               -var tooltip = "St";
               -var src = "../common/img/pam/figurnie/01.png";
-              +catalog__item('Фигурные', href, tooltip, src)
+              -var id = "fig";
+              +catalog__item('Фигурные', href, tooltip, src, id, type)
               //===4===
           //===category===
 
@@ -47,30 +52,36 @@ block content
               - var tooltipCategory = "Гравировка";
               +question(tooltipCategory, "question__big")
             .catalog__items
+              -var type = '_type-A';
               -var href = "vasi.html";
+              -var id = "pz";
               -var tooltip = "St";
               //- -var src = "../common/img/graw/peizaji/1.jpg";
-              +catalog__item('Пейзажи', href, tooltip, src)
+              +catalog__item('Пейзажи', href, tooltip, src, id, type)
               //===1===
               -var href = "vertikalnie.html";
               -var tooltip = "St";
+              -var id = "obrs";
               -var src = "../common/img/graw/obrs/1.jpg";
-              +catalog__item('Обратная сторона', href, tooltip, src)
+              +catalog__item('Обратная сторона', href, tooltip, src, id, type)
               //===2===
               -var href = "vertikalnie.html";
               -var tooltip = "St";
-              -var src = "../common/img/graw/portreti/1.jpg";
-              +catalog__item('Портреты', href, tooltip, src)
+              -var id = "portret";
+              -var src = "../common/img/graw/portret/1.jpg";
+              +catalog__item('Портреты', href, tooltip, src, id, type)
               //===3===
               -var href = "vertikalnie.html";
               -var tooltip = "St";
+              -var id = "svechi";
               -var src = "../common/img/graw/svechi/1.jpg";
-              +catalog__item('Свечи', href, tooltip, src)
+              +catalog__item('Свечи', href, tooltip, src, id, type)
               //===4===
               -var href = "vertikalnie.html";
               -var tooltip = "St";
+              -var id = "zveti";
               -var src = "../common/img/graw/zveti/3.jpg";
-              +catalog__item('Цветы', href, tooltip, src)
+              +catalog__item('Цветы', href, tooltip, src, id, type)
               //===5===
           //===category===
 
@@ -80,6 +91,7 @@ block content
               - var tooltipCategory = "Плиты с портретом";
               +question(tooltipCategory, "question__big")
             .catalog__items
+              -var type = '_type-B';
               -var href = "vasi.html";
               -var tooltip = "St";
               //- -var src = "../common/img/graw/peizaji/1.jpg";
@@ -110,7 +122,7 @@ block content
               //===2===
               -var href = "vertikalnie.html";
               -var tooltip = "St";
-              -var src = "../common/img/graw/portreti/1.jpg";
+              -var src = "../common/img/graw/portret/1.jpg";
               +catalog__item('Мраморная крошка', href, tooltip, src)
               //===3===
           //===category===
@@ -133,7 +145,7 @@ block content
               //===2===
               -var href = "vertikalnie.html";
               -var tooltip = "St";
-              -var src = "../common/img/graw/portreti/1.jpg";
+              -var src = "../common/img/graw/portret/1.jpg";
               +catalog__item('Шары', href, tooltip, src)
               //===3===
           //===category===
